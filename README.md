@@ -1,64 +1,89 @@
-# GP Meets Meerah - Wedding Invitation Website
+# Mirabel & Godspower - Wedding Invitation
 
-A beautiful, responsive wedding invitation website for GP & Meerah's special day.
+A cinematic wedding invitation website built with Next.js, React, Framer Motion, and Tailwind CSS.
 
-## Project Structure
+## 🎬 Features
 
-The website includes the following sections in order:
+- Stunning hero section with animated names
+- Live countdown timer to the wedding date (September 4, 2026)
+- Love story timeline
+- Venue information
+- RSVP form
+- Animated particle background
+- Dark theme with gradient effects
 
-1. **Hero** - Welcome section with couple's names and date
-2. **Love Story** - The story of how the couple met
-3. **Venue** - Wedding ceremony and reception details
-4. **RSVP** - Guest response form
-5. **Gift** - Gift registry links
-6. **Countdown** - Countdown timer to the wedding day
+## 🚀 Getting Started
 
-## Files
+### Prerequisites
+- Node.js 18+
+- npm or yarn
 
-- `index.html` - Main HTML structure
-- `styles.css` - Styling and responsive design
-- `script.js` - JavaScript for countdown timer and interactivity
-- `README.md` - Project documentation
+### Installation
 
-## Features
+```bash
+# Install dependencies
+npm install
 
-- ✨ Responsive design (works on mobile, tablet, desktop)
-- ⏱️ Live countdown timer
-- 📝 RSVP form
-- 🎨 Beautiful gradient backgrounds
-- 🔗 Smooth scrolling navigation
-
-## Getting Started
-
-1. Clone the repository
-2. Open `index.html` in your browser
-3. Customize content with your details:
-   - Update couple's names
-   - Add your love story
-   - Update venue information
-   - Set wedding date in `script.js`
-   - Add registry links
-
-## Customization
-
-Edit the following in `index.html`:
-- Couple names in the hero section
-- Love story content
-- Venue details and address
-- RSVP deadline
-- Gift registry links
-
-Update the wedding date in `script.js`:
-```javascript
-const weddingDate = new Date('September 05, 2026 17:00:00').getTime();
+# Run development server
+npm run dev
 ```
 
-## Technologies Used
+Open [http://localhost:3000](http://localhost:3000) to view the website.
 
-- HTML5
-- CSS3 (Flexbox, Grid, Gradients)
-- Vanilla JavaScript
+## 🏗️ Project Structure
 
-## License
+```
+.
+├── app/
+│   ├── layout.tsx          # Root layout
+│   ├── page.tsx            # Main page
+│   └── globals.css         # Global styles
+├── components/
+│   ├── Hero.tsx            # Hero section
+│   ├── Countdown.tsx       # Countdown timer
+│   ├── LoveStory.tsx       # Love story section
+│   ├── Venue.tsx           # Venue information
+│   ├── RSVP.tsx            # RSVP form
+│   └── Particles.tsx       # Animated particles
+├── package.json
+├── next.config.js
+├── tailwind.config.js
+└── postcss.config.js
+```
 
-Personal project - Feel free to customize for your needs!
+## 📦 Dependencies
+
+- **Next.js 14.2.0** - React framework
+- **React 18.2.0** - UI library
+- **Framer Motion 11.0.0** - Animation library
+- **Tailwind CSS** - Utility-first CSS
+
+## 🎨 Styling
+
+- Dark theme with purple and gold gradient backgrounds
+- Smooth animations and transitions
+- Responsive design
+- Particle animation effects
+
+## 📅 Wedding Details
+
+- **Date**: September 4, 2026
+- **Locations**: 
+  - Traditional Marriage & Church Wedding - Kano
+  - Reception - Meena Event Center
+
+## 🚢 Deployment
+
+Deploy to Vercel with one click:
+
+```bash
+# Build for production
+npm run build
+
+# Start production server
+npm start
+```
+
+## 📝 License
+
+This project is open source and available under the MIT License.
