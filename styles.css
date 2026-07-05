@@ -1,0 +1,268 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Georgia', serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Hero Section */
+.hero {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    text-align: center;
+}
+
+.hero-content h1 {
+    font-size: 4rem;
+    margin-bottom: 10px;
+    font-weight: normal;
+    letter-spacing: 2px;
+}
+
+.hero-content .subtitle {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    opacity: 0.9;
+}
+
+.hero-content .date {
+    font-size: 1.2rem;
+    margin-top: 30px;
+}
+
+/* Love Story Section */
+.lovestory {
+    padding: 80px 20px;
+    background: #f9f9f9;
+}
+
+.lovestory h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    color: #667eea;
+}
+
+.story-content {
+    max-width: 600px;
+    margin: 0 auto;
+    font-size: 1.1rem;
+    line-height: 1.8;
+}
+
+/* Venue Section */
+.venue {
+    padding: 80px 20px;
+    background: white;
+}
+
+.venue h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 50px;
+    color: #667eea;
+}
+
+.venue-details {
+    text-align: center;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.venue-details h3 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+.venue-details .location {
+    font-size: 1.3rem;
+    color: #764ba2;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.venue-details .address {
+    font-size: 1rem;
+    margin-bottom: 20px;
+}
+
+.venue-details .time {
+    font-size: 1.1rem;
+    font-style: italic;
+}
+
+/* RSVP Section */
+.rsvp {
+    padding: 80px 20px;
+    background: #f9f9f9;
+}
+
+.rsvp h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    color: #667eea;
+}
+
+.rsvp > .container > p {
+    text-align: center;
+    font-size: 1.1rem;
+    margin-bottom: 40px;
+}
+
+.rsvp-form {
+    max-width: 500px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.rsvp-form input,
+.rsvp-form select {
+    padding: 12px;
+    font-size: 1rem;
+    border: 2px solid #ddd;
+    border-radius: 4px;
+    font-family: 'Georgia', serif;
+}
+
+.rsvp-form button {
+    padding: 12px;
+    background: #667eea;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.rsvp-form button:hover {
+    background: #764ba2;
+}
+
+/* Gift Section */
+.gift {
+    padding: 80px 20px;
+    background: white;
+}
+
+.gift h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    color: #667eea;
+}
+
+.gift > .container > p {
+    text-align: center;
+    font-size: 1.1rem;
+    margin-bottom: 40px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.gift-links {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.gift-link {
+    display: inline-block;
+    padding: 12px 30px;
+    background: #667eea;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background 0.3s;
+}
+
+.gift-link:hover {
+    background: #764ba2;
+}
+
+/* Countdown Section */
+.countdown {
+    padding: 80px 20px;
+    background: #667eea;
+    color: white;
+}
+
+.countdown h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 50px;
+}
+
+.countdown-timer {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.countdown-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.countdown-value {
+    font-size: 3rem;
+    font-weight: bold;
+    min-width: 100px;
+    text-align: center;
+}
+
+.countdown-label {
+    font-size: 1.2rem;
+    opacity: 0.9;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .hero-content h1 {
+        font-size: 2.5rem;
+    }
+
+    .hero-content .subtitle {
+        font-size: 1.2rem;
+    }
+
+    .lovestory h2,
+    .venue h2,
+    .rsvp h2,
+    .gift h2,
+    .countdown h2 {
+        font-size: 2rem;
+    }
+
+    .countdown-value {
+        font-size: 2rem;
+        min-width: 80px;
+    }
+
+    .countdown-label {
+        font-size: 1rem;
+    }
+}
