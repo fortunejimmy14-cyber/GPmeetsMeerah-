@@ -50,7 +50,7 @@ Edit the following in `index.html`:
 
 Update the wedding date in `script.js`:
 ```javascript
-const weddingDate = new Date('July 12, 2026 17:00:00').getTime();
+const weddingDate = new Date('September 05, 2026 17:00:00').getTime();
 ```
 
 ## Technologies Used
